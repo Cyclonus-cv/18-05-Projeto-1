@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b2kdnilhgrgme"]
+
+[ext_resource type="Script" uid="uid://b1bkex5nuvs62" path="res://personagem.gd" id="1_kxg5b"]
+[ext_resource type="Texture2D" uid="uid://c204xybkmoj4" path="res://Pixel Art Background.jpg" id="1_yq54j"]
+[ext_resource type="Texture2D" uid="uid://c7vuych1rfw78" path="res://richard-macedo-20230716-230848-Photoroom.png" id="3_1ap6j"]
+
+[node name="Jogo" type="Node2D" unique_id=608516414]
+
+[node name="Fundo" type="Sprite2D" parent="." unique_id=1867155930]
+position = Vector2(576.50006, 325.50003)
+scale = Vector2(2.5097613, 2.5585938)
+texture = ExtResource("1_yq54j")
+
+[node name="Personagem" type="CharacterBody2D" parent="." unique_id=219749236]
+script = ExtResource("1_kxg5b")
+
+[node name="Imagem" type="Sprite2D" parent="Personagem" unique_id=1475550278]
+modulate = Color(1, 0.69803923, 0.73333335, 1)
+position = Vector2(560, 502)
+scale = Vector2(0.25941175, 0.2759036)
+texture = ExtResource("3_1ap6j")
